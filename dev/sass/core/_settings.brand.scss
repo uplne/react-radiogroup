@@ -1,0 +1,34 @@
+$brand-bg: #F7F7F7;
+$brand-primary: #f76560;
+$brand-secondary: $brand-primary; //#18bc9c;
+$brand-tertiary: #e7e8eb;
+
+$brand-quatro: #18bc9c;
+
+$brand-text-primary: #465c66;
+$brand-text-secondary: rgba(0,0,0,0.54);
+$brand-nav-text: #888;
+$brand-footer: #141414;
+$brand-footer-light: #191919;
+
+$brand-border: rgba(0,0,0,0.14);
+$brand-border-secondary: rgba(0,0,0,0.4);
+$brand-border-focus: #2c3e50;
+
+// Default button colors
+$brand-light-active: #e6e6e6;
+$brand-light-border: #ccc;
+$brand-light-border-active: #adadad;
+
+// BUTTONS
+$btn-default-bg: #fff;
+$btn-border: $brand-border;
+
+$btn-primary: $brand-secondary;
+$btn-primary-hover: $brand-secondary;
+
+// SOCIAL
+$google: #DD4B39;
+
+$positive: $brand-quatro;
+$negative: #D40D12;

@@ -1,0 +1,28 @@
+.u-is-hidden {
+	display: none;
+}
+
+.u-hide--untiltablet {
+	@include mq($until: $tablet) {
+		display: none !important;
+	}
+}
+
+.u-right {
+	float: right;
+}
+
+.u-center {
+	text-align: center;
+}
+
+$properties: 'top, right, left, bottom, margin, background';
+
+/**
+ * TRANSITIONS
+ */
+%effect-trans {
+    transition-property: #{$properties};
+    transition-duration: .25s;
+    transition-timing-function: ease-out;
+}

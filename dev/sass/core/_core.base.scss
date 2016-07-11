@@ -1,0 +1,88 @@
+/**
+ * Base styles
+ */ 
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	height: 100%;
+	color: $brand-text-primary;
+}
+
+body {
+	&:after {
+		position:fixed !important;
+		height:1px !important;
+		width:1px !important;
+		bottom:0 !important;
+		left:0 !important;
+		z-index:-999 !important;
+		display:inline !important;
+	}
+
+	@include mq($until: $mobile-small) {
+		&:after {
+			content: 'mobile-small';
+		}
+	}
+
+	@include mq($from: $mobile-small, $until: $mobile) {
+		&:after {
+			content: 'mobile';
+		}
+	}
+
+	@include mq($from: $mobile, $until: $tablet) {
+		&:after {
+			content: 'tablet';
+		}
+	}
+
+	@include mq($from: $tablet) {
+		&:after {
+			content: 'desktop';
+		}
+	}
+}
+
+a {
+	color: $brand-primary;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+svg {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+input {
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	color: $brand-text-primary;
+}
+
+::selection {
+  background: $brand-primary;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: $brand-primary;
+  color: #ffffff;
+}
+
+*:focus {
+    outline: none;
+}

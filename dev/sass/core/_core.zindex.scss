@@ -1,0 +1,8 @@
+/**
+ * This shall stop the z-index chaos
+ */
+
+$zindex-sticky: 1020;   // Sticky
+$zindex-modal: 1030;    // Modal
+$zindex-dropback: 1040; // Dark overlay background
+$zindex-overlay: 1050;  // Lightbox

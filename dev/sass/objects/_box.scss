@@ -1,0 +1,14 @@
+.box {
+	padding: $default-spacing-unit;
+	margin-bottom: $default-spacing-unit;
+}
+
+.box--small {
+	padding: $default-spacing-unit / 2;
+	margin-bottom: $default-spacing-unit / 2;
+}
+
+.box--styled {
+	background-color: #ffffff;
+	border: 1px solid $brand-border;
+}
